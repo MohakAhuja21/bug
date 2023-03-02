@@ -1,0 +1,59 @@
+.login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+.login h2{
+    text-align: center;
+    font-size: 2vmax;
+    padding: 1vmax;
+    margin: 1vmax auto;
+    color: rgb(0, 0, 0, 0.7);
+}   
+.login p{
+    border-bottom: 2px dashed lightgray;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-size: 1.5vmax;
+    margin-inline: 20px;
+} 
+.login p:last-child{
+    border: none;
+    padding: none;
+    margin-top: 10px;
+    color: rgb(151, 150, 150);
+}
+.login >p >b{
+    color: gray;
+    font-weight: bold;
+    text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+   .login h2{
+    width: fit-content;
+    font-size: 5.5vmax;
+    margin: unset;
+    margin-right: auto;
+    padding-left: 20px;
+   } 
+   .login{
+    height: 100vh;
+   }
+   .login p{
+    color: #333;
+    font-size: 3.6vmax;
+   }
+   .login p:last-child{
+    padding: 10px;
+    margin-top: 0;
+    font-size: 2.4vmax;
+   }
+   .login img{
+    filter: grayscale(50%);
+    width: 35vh;
+    object-fit: cover;
+   }
+}

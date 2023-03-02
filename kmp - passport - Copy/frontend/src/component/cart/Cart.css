@@ -1,0 +1,235 @@
+.emptyCart {
+    margin: auto;
+    text-align: center;
+    padding: 15vmax;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .emptyCart > svg {
+    font-size: 10vmax;
+    /* color: rgb(13, 123, 512); */
+    color: #FFBF00;
+  }
+  .emptyCart > p {
+    white-space: nowrap;
+    font-size: 2.1vmax;
+    color: gray;
+  }
+  
+  .emptyCart > a {
+    background-color: #051B4C;
+    padding: 0.8vmax 1vmax;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    width: 15%;
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    text-decoration: none;
+  }
+  .emptyCart > a:hover {
+    transform: scale(1.1);
+  }
+  
+  .cardPage {
+    padding: 5vmax;
+  }
+  
+  .cartHeader {
+    background-color: #051b4cee;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin: 1vmax auto; */
+    color: white;
+    display: grid;
+    grid-template-columns: 4fr 1fr 35vh;
+  }
+  
+  .cartHeader > p {
+    margin: 10px;  
+    font-size: 19px;
+    color: whitesmoke;
+  }
+  
+  .cartHeader > p:last-child {
+    text-align: end;
+  }
+  
+  .cartContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+  }
+  
+  .cartInput {
+    display: flex;
+    align-items: center;
+    height: 8vmax;
+  }
+  
+  .cartInput > button {
+    border: none;
+    background-color: rgba(51, 51, 51, 0.922);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.5s;
+    border-radius: 5px;
+  }
+  
+  .cartInput > input {
+    border: none;
+    padding: 0.5vmax;
+    width: 2.5vmax;
+    text-align: center;
+    outline: none;
+    font-weight: 400;
+    font-size: 0.8vmax;
+    color: rgba(0, 0, 0, 0.74);
+  }
+  .cartPage{
+    overflow: auto;
+    height: 100vh;
+  } 
+  
+  .cartSubtotal {
+    display: flex;
+    padding: 0.5vmax;
+    justify-content: flex-end;
+    color: rgba(0, 0, 0, 0.777);
+    height: 8vmax;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .cartGrossTotal {
+    display: grid;
+    grid-template-columns: 1.0fr 1.2fr;
+    padding-right: 5vmax;
+  }
+  
+  .cartGrossTotalBox {
+    border-top: 2px solid #FFBF0F;
+    box-sizing: border-box;
+    padding: 2vmax 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .cartGrossTotalBox>p:last-child{
+    padding-left: 22px;
+  }
+  
+  .checkOutBtn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    grid-column-start: 2;
+  }
+  
+  .checkOutBtn > button {
+    cursor: pointer;
+    background-color: #051B4C;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+    transition: all 0s ease;
+  }
+  
+  
+  .checkOutBtn > button:hover {
+    background-color: rgb(13, 123, 512);
+    transform: scale(1.1);
+  }
+  .cartGrossTotal__discount{
+    border: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    margin-left: 4px;
+    width: fit-content;
+    border-bottom: 1px #333 dashed;
+    background: rgba(2, 218, 2, 0.319);
+    appearance: none;
+    padding: 6px;
+    outline: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: black;
+    font-size: 15px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cartHeader {
+      padding: 5px;
+      width: 100%;
+      grid-template-columns: 3fr 1fr 1.1fr;
+      border-radius: 0%;
+    }
+    .emptyCart > svg {
+      font-size: 17vmax
+    }
+
+    .emptyCart a{
+      width: max-content;
+      padding: 13px;
+    }
+
+    .cartContainer {
+      width: 100%;
+      grid-template-columns: 3fr 1fr 1fr;
+      border-radius: 0%;
+    }
+    .cartPage{
+      margin-bottom: 7vh;
+    }
+  
+    .cartInput {
+      height: 20vmax;
+    }
+  
+    .cartInput > button {
+      padding: 1vmax;
+    }
+  
+    .cartInput > input {
+      width: 4vmax;
+      padding: 1vmax;
+      font: 400 1.8vmax "Roboto";
+    }
+  
+    .cartSubtotal {
+      padding: 1.5vmax;
+      height: 20vmax;
+    }
+  
+    .cartGrossTotal {
+      display: contents;
+    }
+  
+    .cartGrossTotalBox {
+      font-size: large;
+      padding: 2vmax;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  
+    .checkOutBtn{
+      margin-right: 10px;
+    }
+  
+    .checkOutBtn > button {
+      width: 40%;
+    }
+  }

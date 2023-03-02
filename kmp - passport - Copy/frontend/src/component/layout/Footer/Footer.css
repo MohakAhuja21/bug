@@ -1,0 +1,108 @@
+.footer {
+  overflow: hidden;
+  background: #333;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+.footer h2> b{
+border-bottom: 1px solid #ffbf00;
+}
+
+.footer h2 {
+  margin: auto;
+  text-align: center;
+  font-style: italic;
+  color: whitesmoke;
+}
+
+.footer__formCon{
+  border-bottom: 1px solid whitesmoke;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__form {
+  color: white;
+  padding: 0.75rem 0;
+  border: none;
+  background: none;
+  width: 270px;
+  border-radius: 0;
+  font-size: 1.05rem;
+  caret-color: whitesmoke;
+  transition: all 0.2s ease;
+}
+.footer__form:focus {
+  width: 300px;
+  outline: none;
+}
+::placeholder {
+  color: lightgray;
+}
+
+.row-newsletter {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__button {
+  cursor: pointer;
+  background-color: #ffbf00;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.4% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  opacity: 1;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px -2px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}

@@ -1,0 +1,13 @@
+.users{
+    width: 100%;
+    height: 100vh;
+}
+.tb__row{
+    white-space: nowrap;
+}
+.users img{
+    width: 50px;
+    object-fit: contain;
+}
+@media screen and (max-width: 800px) {
+}

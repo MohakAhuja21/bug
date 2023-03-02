@@ -1,0 +1,103 @@
+.productsHeading {
+  margin: auto;
+    width: 15vw;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    margin-bottom: 20px;
+    font-size: 2vmax;
+    padding-bottom: 7px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.678);
+    text-align: center;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5vmax;
+    justify-content: center;
+    min-height: 30vh;
+  }
+  
+  .paginationBox {
+    display: flex;
+    justify-content: center;
+    margin: 2vmax;
+  }
+  
+  .pagination {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .page-item {
+    list-style: none;
+    padding: 1vmax 1.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .page-item:first-child {
+    display: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .page-item:last-child {
+    display: none;
+    border-radius: 0 5px 5px 0;
+  }
+  .page-link {
+    font-size: large;
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    transition: all 0.3s;
+  }
+  
+  .page-item:hover {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .page-item:hover .page-link {
+    color: rgb(0, 0, 0);
+  }
+  
+  .pageItemActive {
+    background-color: #FFBF00;
+  }
+  
+  .pageLinkActive {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .filterBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vmax;
+  }
+  .filterBox > fieldset {
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+  }
+
+  .product__modal{
+    text-align: center;
+  }
+
+  @media screen and (max-width:700px){
+    .productsHeading{
+      width: 50vw;
+      font-size: 3.4vmax;
+    }
+    .filterBox{
+      width: 36vmax;
+    }
+    .page-item{
+      overflow: hidden;
+      padding: 20px;
+      text-align: center;
+      width: fit-content;
+    }
+  }

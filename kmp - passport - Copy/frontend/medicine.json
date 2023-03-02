@@ -1,0 +1,14 @@
+{
+  "name": "Pantosec-D Tablet",
+  "manufacturer": "Cipla Ltd",
+  "description": "Pantosec-D Tablet is a prescription medicine used to treat gastroesophageal reflux disease (Acid reflux) and peptic ulcer disease by relieving the symptoms of acidity such as indigestion, heartburn, stomach pain, or irritation.",
+  "packaging": "10 Tablet(s) in a Strip",
+  "salt_composition": "Domperidone (10mg) + Pantoprazole (40mg)",
+  "common_side_effect": "Diarrhea, Stomach pain, Flatulence, Dryness in mouth, Dizziness, Headache",
+  "price": 149,
+  "images": {
+    "public_id": "sample image",
+    "url": "https://res.cloudinary.com/db4oba9mb/image/upload/v1677221783/website%20assets%20kmp/products/1647003285_140401_0_mvdqbw.jpg"
+  },
+  "category": "Pantosec D"
+}
